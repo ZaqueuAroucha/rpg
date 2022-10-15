@@ -1,0 +1,1 @@
+export type CharacterSlides = 'down' | 'left' | 'right' | 'up'
