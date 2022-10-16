@@ -5,10 +5,11 @@ type Props = {
   x: number;
   y: number;
   side: CharacterSlides;
+  name: string;
 
 }
 
-export const Character = ({x, y, side}: Props) => {
+export const Character = ({x, y, side, name}: Props) => {
   const size = 30;
   const sides = {
     down: 0,
@@ -25,7 +26,7 @@ export const Character = ({x, y, side}: Props) => {
       top={y * size}
       sidePos={sides[side] ?? 0}
     >
-         
+      <C.NameBox>{name}</C.NameBox>
     </C.Container>
   )
 }
